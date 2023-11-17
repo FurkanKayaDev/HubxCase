@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* hubxCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* hubxCaseTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-hubxCase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-hubxCase.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1421A7D707AE41FEA61F2DCB /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B38A1D46E4B06865610B8 /* Rubik-MediumItalic.ttf */; };
+		160A51FB002C4B2AA5E1ADC9 /* VisbyLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B00185F0B13541498948FD66 /* VisbyLight Italic.otf */; };
+		1D62286A9EED47C9B432A0C6 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0BB388FCDE2F42D89B1DF36B /* SF-Pro-Text-RegularItalic.otf */; };
+		25E6F2133A00432A9C918B5F /* VisbyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 69CDF9F2BFB04439B12ADE6A /* VisbyItalic.otf */; };
+		29CF82A4AD464DE0A2B84AF5 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC032E855874609B0B9275A /* SF-Pro-Text-Bold.otf */; };
+		2DF2A799B0B84EC8AD3EDE0F /* VisbyThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46C6152837674F0F8727366E /* VisbyThin.otf */; };
+		2DFA6B63BA2545CB80F87B55 /* VisbySemibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4AC4973ECF144F05A7822616 /* VisbySemibold.otf */; };
+		355E2C9E9A334A8B9F8628FC /* VisbyHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 316CF8CB1EE945CAB02D5E72 /* VisbyHeavy.otf */; };
+		462E54112B075BC0003C5075 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 462E540D2B0757F6003C5075 /* Fonts */; };
+		50E9B49B32454B979A06BCF8 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A23A2C73D08D4134AA30B3A6 /* SF-Pro-Text-Regular.otf */; };
+		5A99ECC6B0444554BFE1215A /* VisbyBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA0F2A6C6E2542FDA3F4BB8A /* VisbyBold.otf */; };
+		5BB2A3FD633745CBB06AC5DF /* VisbyExtrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFF63A4A374A648872EE66 /* VisbyExtrabold.otf */; };
+		5DB053327D0A4B21892AEB21 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06A386311B8A4E53BF6AD94A /* Rubik-Regular.ttf */; };
+		5E70A2BBC30D4763B8331CF0 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 768ACF7A429F47DDA67D5E6B /* SF-Pro-Text-LightItalic.otf */; };
+		63B99F19C64C4D628EC00D28 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE78907FB7544B3991B191B8 /* Rubik-Black.ttf */; };
+		7699B88040F8A987B510C191 /* libPods-hubxCase-hubxCaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-hubxCase-hubxCaseTests.a */; };
+		7907DE5C6F194217AAABDA6D /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D98587DB473549C69F498D74 /* SF-Pro-Text-SemiboldItalic.otf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		81B3E13AF7BD4B73809C0CE1 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A83542E78DD2458EACD0D625 /* SF-Pro-Text-MediumItalic.otf */; };
+		83BE1336039843F4B587F6D4 /* VisbyBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6B2A885EE664583A7AF4AE0 /* VisbyBold Italic.otf */; };
+		904C7DA803734850A5E99435 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6AE95EE7994A99BB6496BE /* SF-Pro-Text-Heavy.otf */; };
+		A08397923322445CBAB75B2D /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5D6BE43C0DE46D2A6A56B92 /* SF-Pro-Text-BoldItalic.otf */; };
+		A825A425EBFA45A2A159BD27 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA47E9CAC90C46599DEA1BEC /* Rubik-BoldItalic.ttf */; };
+		AFF02FB7765445168B713A62 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3EAE5A9845B24002AFA721FA /* SF-Pro-Text-Medium.otf */; };
+		B96D4B9A94B3479589EF7325 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43A3DEDF74D482B8BECF904 /* Rubik-Light.ttf */; };
+		B9A4AB3BFE044D16AAD9AD92 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7222EAEB8B614B54A007BA62 /* Rubik-Medium.ttf */; };
+		B9B67D1C31804247AE20FA3F /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0793BDEE15294F659F8B648C /* Rubik-Bold.ttf */; };
+		BB48C37EC7DF493E9CE6EAB8 /* VisbySemibold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A608D4F9ADC49188737140C /* VisbySemibold Italic.otf */; };
+		BC91A6D7118C47DD9D267528 /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D7D8B8E4B7EA41CF9115F958 /* SF-Pro-Text-HeavyItalic.otf */; };
+		BCF4AFA147E6420E93549312 /* VisbyHeavy Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 74EF0F7C74524D4893D022F5 /* VisbyHeavy Italic.otf */; };
+		BD8C76CE6AC542059672D4F9 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D2B654661314BE8B21F142D /* SF-Pro-Text-Semibold.otf */; };
+		C358692BB7A24F5EA9FAF79D /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F297F6A62974A7F9DFCDB6A /* Rubik-LightItalic.ttf */; };
+		C71B7D240952427382C4C8BF /* VisbyMedium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8AB8A0DDF1BC456D9FBE9289 /* VisbyMedium Italic.otf */; };
+		C73FF79BAABD4DC08857A146 /* VisbyMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04057BF08D0E45C3908781E7 /* VisbyMedium.otf */; };
+		D12DCE71D8FA461B9C53614D /* VisbyLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = E2B1BD9208154C5481B71F80 /* VisbyLight.otf */; };
+		D5966C77A7A9436285B732F2 /* VisbyThin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC07753C6B7E422CAA45A568 /* VisbyThin Italic.otf */; };
+		DAE6A7DCECE4440DAEBFFFB4 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3714FCF00F824549B6A5AEB0 /* Rubik-Italic.ttf */; };
+		E5FE6CF0C7B541C9A51E1791 /* VisbyRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30FFBBE844704E2885F8D383 /* VisbyRegular.otf */; };
+		EB73589CBC4B430AA1EAE8C9 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A0A1F7E5DEAF41BD9A5D4A8E /* SF-Pro-Text-Light.otf */; };
+		FBD94E1C16DD46A0AF745ABF /* VisbyExtrabold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75064F84B8EE44B68430A2C7 /* VisbyExtrabold Italic.otf */; };
+		FF588DFA15734E5CA40DB4A4 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C51AAD4BB224FB5A4B2269B /* Rubik-BlackItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = hubxCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* hubxCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hubxCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* hubxCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hubxCaseTests.m; sourceTree = "<group>"; };
+		04057BF08D0E45C3908781E7 /* VisbyMedium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyMedium.otf; path = ../src/assets/fonts/VisbyMedium.otf; sourceTree = "<group>"; };
+		06A386311B8A4E53BF6AD94A /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../src/assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		0793BDEE15294F659F8B648C /* Rubik-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.ttf"; path = "../src/assets/fonts/Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		0BB388FCDE2F42D89B1DF36B /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-RegularItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		0C51AAD4BB224FB5A4B2269B /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BlackItalic.ttf"; path = "../src/assets/fonts/Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* hubxCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hubxCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = hubxCase/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = hubxCase/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = hubxCase/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = hubxCase/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = hubxCase/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-hubxCase-hubxCaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hubxCase-hubxCaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0B38A1D46E4B06865610B8 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-MediumItalic.ttf"; path = "../src/assets/fonts/Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		2DC032E855874609B0B9275A /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Bold.otf"; path = "../src/assets/fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		2F297F6A62974A7F9DFCDB6A /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-LightItalic.ttf"; path = "../src/assets/fonts/Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		30FFBBE844704E2885F8D383 /* VisbyRegular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyRegular.otf; path = ../src/assets/fonts/VisbyRegular.otf; sourceTree = "<group>"; };
+		316CF8CB1EE945CAB02D5E72 /* VisbyHeavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyHeavy.otf; path = ../src/assets/fonts/VisbyHeavy.otf; sourceTree = "<group>"; };
+		3714FCF00F824549B6A5AEB0 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Italic.ttf"; path = "../src/assets/fonts/Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		3A6AE95EE7994A99BB6496BE /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Heavy.otf"; path = "../src/assets/fonts/SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-hubxCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hubxCase.debug.xcconfig"; path = "Target Support Files/Pods-hubxCase/Pods-hubxCase.debug.xcconfig"; sourceTree = "<group>"; };
+		3BBFF63A4A374A648872EE66 /* VisbyExtrabold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyExtrabold.otf; path = ../src/assets/fonts/VisbyExtrabold.otf; sourceTree = "<group>"; };
+		3EAE5A9845B24002AFA721FA /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Medium.otf"; path = "../src/assets/fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		462E540D2B0757F6003C5075 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
+		46C6152837674F0F8727366E /* VisbyThin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyThin.otf; path = ../src/assets/fonts/VisbyThin.otf; sourceTree = "<group>"; };
+		4AC4973ECF144F05A7822616 /* VisbySemibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbySemibold.otf; path = ../src/assets/fonts/VisbySemibold.otf; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-hubxCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hubxCase.release.xcconfig"; path = "Target Support Files/Pods-hubxCase/Pods-hubxCase.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-hubxCase-hubxCaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hubxCase-hubxCaseTests.debug.xcconfig"; path = "Target Support Files/Pods-hubxCase-hubxCaseTests/Pods-hubxCase-hubxCaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-hubxCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hubxCase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CDF9F2BFB04439B12ADE6A /* VisbyItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyItalic.otf; path = ../src/assets/fonts/VisbyItalic.otf; sourceTree = "<group>"; };
+		7222EAEB8B614B54A007BA62 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../src/assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		74EF0F7C74524D4893D022F5 /* VisbyHeavy Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "VisbyHeavy Italic.otf"; path = "../src/assets/fonts/VisbyHeavy Italic.otf"; sourceTree = "<group>"; };
+		75064F84B8EE44B68430A2C7 /* VisbyExtrabold Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "VisbyExtrabold Italic.otf"; path = "../src/assets/fonts/VisbyExtrabold Italic.otf"; sourceTree = "<group>"; };
+		768ACF7A429F47DDA67D5E6B /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-LightItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		7A608D4F9ADC49188737140C /* VisbySemibold Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "VisbySemibold Italic.otf"; path = "../src/assets/fonts/VisbySemibold Italic.otf"; sourceTree = "<group>"; };
+		7D2B654661314BE8B21F142D /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Semibold.otf"; path = "../src/assets/fonts/SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = hubxCase/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-hubxCase-hubxCaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hubxCase-hubxCaseTests.release.xcconfig"; path = "Target Support Files/Pods-hubxCase-hubxCaseTests/Pods-hubxCase-hubxCaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		8AB8A0DDF1BC456D9FBE9289 /* VisbyMedium Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "VisbyMedium Italic.otf"; path = "../src/assets/fonts/VisbyMedium Italic.otf"; sourceTree = "<group>"; };
+		A0A1F7E5DEAF41BD9A5D4A8E /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Light.otf"; path = "../src/assets/fonts/SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		A23A2C73D08D4134AA30B3A6 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		A43A3DEDF74D482B8BECF904 /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../src/assets/fonts/Rubik-Light.ttf"; sourceTree = "<group>"; };
+		A83542E78DD2458EACD0D625 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-MediumItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		B00185F0B13541498948FD66 /* VisbyLight Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "VisbyLight Italic.otf"; path = "../src/assets/fonts/VisbyLight Italic.otf"; sourceTree = "<group>"; };
+		BA0F2A6C6E2542FDA3F4BB8A /* VisbyBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyBold.otf; path = ../src/assets/fonts/VisbyBold.otf; sourceTree = "<group>"; };
+		C6B2A885EE664583A7AF4AE0 /* VisbyBold Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "VisbyBold Italic.otf"; path = "../src/assets/fonts/VisbyBold Italic.otf"; sourceTree = "<group>"; };
+		D7D8B8E4B7EA41CF9115F958 /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-HeavyItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		D98587DB473549C69F498D74 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-SemiboldItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		DA47E9CAC90C46599DEA1BEC /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BoldItalic.ttf"; path = "../src/assets/fonts/Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E2B1BD9208154C5481B71F80 /* VisbyLight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyLight.otf; path = ../src/assets/fonts/VisbyLight.otf; sourceTree = "<group>"; };
+		E5D6BE43C0DE46D2A6A56B92 /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-BoldItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		EC07753C6B7E422CAA45A568 /* VisbyThin Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "VisbyThin Italic.otf"; path = "../src/assets/fonts/VisbyThin Italic.otf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE78907FB7544B3991B191B8 /* Rubik-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Black.ttf"; path = "../src/assets/fonts/Rubik-Black.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-hubxCase-hubxCaseTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-hubxCase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* hubxCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* hubxCaseTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = hubxCaseTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* hubxCase */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = hubxCase;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-hubxCase.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-hubxCase-hubxCaseTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				462E540D2B0757F6003C5075 /* Fonts */,
+				13B07FAE1A68108700A75B9A /* hubxCase */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* hubxCaseTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				944A7B2BE8464F5F8CE723FD /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* hubxCase.app */,
+				00E356EE1AD99517003FC87E /* hubxCaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		944A7B2BE8464F5F8CE723FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DC032E855874609B0B9275A /* SF-Pro-Text-Bold.otf */,
+				E5D6BE43C0DE46D2A6A56B92 /* SF-Pro-Text-BoldItalic.otf */,
+				3A6AE95EE7994A99BB6496BE /* SF-Pro-Text-Heavy.otf */,
+				D7D8B8E4B7EA41CF9115F958 /* SF-Pro-Text-HeavyItalic.otf */,
+				A0A1F7E5DEAF41BD9A5D4A8E /* SF-Pro-Text-Light.otf */,
+				768ACF7A429F47DDA67D5E6B /* SF-Pro-Text-LightItalic.otf */,
+				3EAE5A9845B24002AFA721FA /* SF-Pro-Text-Medium.otf */,
+				A83542E78DD2458EACD0D625 /* SF-Pro-Text-MediumItalic.otf */,
+				A23A2C73D08D4134AA30B3A6 /* SF-Pro-Text-Regular.otf */,
+				0BB388FCDE2F42D89B1DF36B /* SF-Pro-Text-RegularItalic.otf */,
+				7D2B654661314BE8B21F142D /* SF-Pro-Text-Semibold.otf */,
+				D98587DB473549C69F498D74 /* SF-Pro-Text-SemiboldItalic.otf */,
+				C6B2A885EE664583A7AF4AE0 /* VisbyBold Italic.otf */,
+				BA0F2A6C6E2542FDA3F4BB8A /* VisbyBold.otf */,
+				75064F84B8EE44B68430A2C7 /* VisbyExtrabold Italic.otf */,
+				3BBFF63A4A374A648872EE66 /* VisbyExtrabold.otf */,
+				74EF0F7C74524D4893D022F5 /* VisbyHeavy Italic.otf */,
+				316CF8CB1EE945CAB02D5E72 /* VisbyHeavy.otf */,
+				69CDF9F2BFB04439B12ADE6A /* VisbyItalic.otf */,
+				B00185F0B13541498948FD66 /* VisbyLight Italic.otf */,
+				E2B1BD9208154C5481B71F80 /* VisbyLight.otf */,
+				8AB8A0DDF1BC456D9FBE9289 /* VisbyMedium Italic.otf */,
+				04057BF08D0E45C3908781E7 /* VisbyMedium.otf */,
+				30FFBBE844704E2885F8D383 /* VisbyRegular.otf */,
+				7A608D4F9ADC49188737140C /* VisbySemibold Italic.otf */,
+				4AC4973ECF144F05A7822616 /* VisbySemibold.otf */,
+				EC07753C6B7E422CAA45A568 /* VisbyThin Italic.otf */,
+				46C6152837674F0F8727366E /* VisbyThin.otf */,
+				EE78907FB7544B3991B191B8 /* Rubik-Black.ttf */,
+				0C51AAD4BB224FB5A4B2269B /* Rubik-BlackItalic.ttf */,
+				0793BDEE15294F659F8B648C /* Rubik-Bold.ttf */,
+				DA47E9CAC90C46599DEA1BEC /* Rubik-BoldItalic.ttf */,
+				3714FCF00F824549B6A5AEB0 /* Rubik-Italic.ttf */,
+				A43A3DEDF74D482B8BECF904 /* Rubik-Light.ttf */,
+				2F297F6A62974A7F9DFCDB6A /* Rubik-LightItalic.ttf */,
+				7222EAEB8B614B54A007BA62 /* Rubik-Medium.ttf */,
+				1F0B38A1D46E4B06865610B8 /* Rubik-MediumItalic.ttf */,
+				06A386311B8A4E53BF6AD94A /* Rubik-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-hubxCase.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-hubxCase.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-hubxCase-hubxCaseTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-hubxCase-hubxCaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* hubxCaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "hubxCaseTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = hubxCaseTests;
+			productName = hubxCaseTests;
+			productReference = 00E356EE1AD99517003FC87E /* hubxCaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* hubxCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hubxCase" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hubxCase;
+			productName = hubxCase;
+			productReference = 13B07F961A680F5B00A75B9A /* hubxCase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hubxCase" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* hubxCase */,
+				00E356ED1AD99517003FC87E /* hubxCaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462E54112B075BC0003C5075 /* Fonts in Resources */,
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				29CF82A4AD464DE0A2B84AF5 /* SF-Pro-Text-Bold.otf in Resources */,
+				A08397923322445CBAB75B2D /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				904C7DA803734850A5E99435 /* SF-Pro-Text-Heavy.otf in Resources */,
+				BC91A6D7118C47DD9D267528 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				EB73589CBC4B430AA1EAE8C9 /* SF-Pro-Text-Light.otf in Resources */,
+				5E70A2BBC30D4763B8331CF0 /* SF-Pro-Text-LightItalic.otf in Resources */,
+				AFF02FB7765445168B713A62 /* SF-Pro-Text-Medium.otf in Resources */,
+				81B3E13AF7BD4B73809C0CE1 /* SF-Pro-Text-MediumItalic.otf in Resources */,
+				50E9B49B32454B979A06BCF8 /* SF-Pro-Text-Regular.otf in Resources */,
+				1D62286A9EED47C9B432A0C6 /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				BD8C76CE6AC542059672D4F9 /* SF-Pro-Text-Semibold.otf in Resources */,
+				7907DE5C6F194217AAABDA6D /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				83BE1336039843F4B587F6D4 /* VisbyBold Italic.otf in Resources */,
+				5A99ECC6B0444554BFE1215A /* VisbyBold.otf in Resources */,
+				FBD94E1C16DD46A0AF745ABF /* VisbyExtrabold Italic.otf in Resources */,
+				5BB2A3FD633745CBB06AC5DF /* VisbyExtrabold.otf in Resources */,
+				BCF4AFA147E6420E93549312 /* VisbyHeavy Italic.otf in Resources */,
+				355E2C9E9A334A8B9F8628FC /* VisbyHeavy.otf in Resources */,
+				25E6F2133A00432A9C918B5F /* VisbyItalic.otf in Resources */,
+				160A51FB002C4B2AA5E1ADC9 /* VisbyLight Italic.otf in Resources */,
+				D12DCE71D8FA461B9C53614D /* VisbyLight.otf in Resources */,
+				C71B7D240952427382C4C8BF /* VisbyMedium Italic.otf in Resources */,
+				C73FF79BAABD4DC08857A146 /* VisbyMedium.otf in Resources */,
+				E5FE6CF0C7B541C9A51E1791 /* VisbyRegular.otf in Resources */,
+				BB48C37EC7DF493E9CE6EAB8 /* VisbySemibold Italic.otf in Resources */,
+				2DFA6B63BA2545CB80F87B55 /* VisbySemibold.otf in Resources */,
+				D5966C77A7A9436285B732F2 /* VisbyThin Italic.otf in Resources */,
+				2DF2A799B0B84EC8AD3EDE0F /* VisbyThin.otf in Resources */,
+				63B99F19C64C4D628EC00D28 /* Rubik-Black.ttf in Resources */,
+				FF588DFA15734E5CA40DB4A4 /* Rubik-BlackItalic.ttf in Resources */,
+				B9B67D1C31804247AE20FA3F /* Rubik-Bold.ttf in Resources */,
+				A825A425EBFA45A2A159BD27 /* Rubik-BoldItalic.ttf in Resources */,
+				DAE6A7DCECE4440DAEBFFFB4 /* Rubik-Italic.ttf in Resources */,
+				B96D4B9A94B3479589EF7325 /* Rubik-Light.ttf in Resources */,
+				C358692BB7A24F5EA9FAF79D /* Rubik-LightItalic.ttf in Resources */,
+				B9A4AB3BFE044D16AAD9AD92 /* Rubik-Medium.ttf in Resources */,
+				1421A7D707AE41FEA61F2DCB /* Rubik-MediumItalic.ttf in Resources */,
+				5DB053327D0A4B21892AEB21 /* Rubik-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hubxCase/Pods-hubxCase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hubxCase/Pods-hubxCase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hubxCase/Pods-hubxCase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hubxCase-hubxCaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hubxCase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hubxCase-hubxCaseTests/Pods-hubxCase-hubxCaseTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hubxCase-hubxCaseTests/Pods-hubxCase-hubxCaseTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hubxCase-hubxCaseTests/Pods-hubxCase-hubxCaseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hubxCase/Pods-hubxCase-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hubxCase/Pods-hubxCase-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hubxCase/Pods-hubxCase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hubxCase-hubxCaseTests/Pods-hubxCase-hubxCaseTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hubxCase-hubxCaseTests/Pods-hubxCase-hubxCaseTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hubxCase-hubxCaseTests/Pods-hubxCase-hubxCaseTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* hubxCaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* hubxCase */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-hubxCase-hubxCaseTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hubxCaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hubxCase.app/hubxCase";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-hubxCase-hubxCaseTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = hubxCaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hubxCase.app/hubxCase";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-hubxCase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = hubxCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = hubxCase;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-hubxCase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = hubxCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = hubxCase;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "hubxCaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hubxCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hubxCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
