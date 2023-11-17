@@ -5,3 +5,5 @@ export {default as SpeedMeter} from './SpeedMeter';
 export {default as Herbal} from './Herbal';
 export {default as ActiveTick} from './ActiveTick';
 export {default as InactiveTick} from './InactiveTick';
+export {default as Mail} from './Mail';
+export {default as BoldArrow} from './BoldArrow';

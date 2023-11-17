@@ -13,8 +13,8 @@ const Router = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="StepStack" component={StepStack} />
         <Stack.Screen name="MainStack" component={MainStack} />
+        <Stack.Screen name="StepStack" component={StepStack} />
       </Stack.Navigator>
     </NavigationContainer>
   );
