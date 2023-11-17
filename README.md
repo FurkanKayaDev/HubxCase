@@ -1,3 +1,9 @@
+#HubX
+
+
+https://github.com/Lyndray/HubxCase/assets/103508575/a8364bd5-a16f-40a9-87d2-73c4f203e959
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
