@@ -5,6 +5,7 @@ import {
   screenHeight,
   fonts,
   fontSizes,
+  screenScale,
 } from '../constants/constants';
 
 interface Props {
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
   },
   cardImage: {
     width: screenWidth * 0.64,
-    height: screenHeight * 0.18,
+    height: screenScale * 360,
     borderRadius: 10,
     justifyContent: 'flex-end',
     alignItems: 'flex-start',

@@ -10,11 +10,12 @@ import {
 import React from 'react';
 import FirstStepBg from '../../../assets/images/Background.png';
 import FirstImage from '../../../assets/images/FirstPageImage.png';
-import {useNavigation} from '@react-navigation/native';
+import {NavigationProp, useNavigation} from '@react-navigation/native';
 
 import {styles} from './FirstStep.styles';
+import {RootStackParamList} from '../../../types/AllType';
 const FirstStep = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (
     <ImageBackground source={FirstStepBg} style={styles.imageBg}>
       <SafeAreaView style={styles.container}>

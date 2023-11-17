@@ -1,5 +1,4 @@
 import {
-  StyleSheet,
   Text,
   View,
   ImageBackground,
@@ -7,28 +6,24 @@ import {
   TouchableOpacity,
   FlatList,
   SafeAreaView,
-  Platform,
 } from 'react-native';
 import React, {useEffect} from 'react';
 import HomeBackground from '../../assets/images/HomeBackground.png';
-import {fontSizes, fonts} from '../../constants/constants';
-import Icon from 'react-native-vector-icons/dist/Fontisto';
+import Icon from 'react-native-vector-icons/Fontisto';
 import * as Icons from '../../assets/icons';
-import {screenWidth, screenHeight} from '../../constants/constants';
 import GradientText from '../../components/GradientText';
-import {useDispatch, useSelector} from 'react-redux';
+import {useSelector} from 'react-redux';
 import {RootState} from '../../redux/store';
 import {fetchQuestions} from '../../redux/Features/QuestionSlice';
 import {fetchCategories} from '../../redux/Features/CategoriesSlice';
-import {AppDispatch} from '../../redux/store';
 import QuestionCard from '../../components/QuestionCard';
 import CategoryCard from '../../components/CategoryCard';
 import {styles} from './Home.styles';
-
+import {useAppDispatch} from '../../redux/store';
 const Home = () => {
-  const dispatch: AppDispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
-  const {questions, loading, error} = useSelector(
+  const {questions, loading} = useSelector(
     (state: RootState) => state.question,
   );
 
@@ -49,7 +44,11 @@ const Home = () => {
           <Text style={styles.headerContent}>Good Afternoon! ⛅</Text>
           <View style={styles.inputContainer}>
             <Icon name="search" size={16} color="#AFAFAF" />
-            <TextInput placeholder="Search for plants" style={styles.input} />
+            <TextInput
+              placeholder="Search for plants"
+              style={styles.input}
+              placeholderTextColor={'#AFAFAF'}
+            />
           </View>
         </View>
       </ImageBackground>
@@ -73,13 +72,19 @@ const Home = () => {
       </TouchableOpacity>
       <View style={styles.questions}>
         <Text style={styles.questionsTitle}>Get Started</Text>
-        <FlatList data={questions} horizontal renderItem={renderQuestionItem} />
+        <FlatList
+          data={questions}
+          horizontal
+          renderItem={renderQuestionItem}
+          showsHorizontalScrollIndicator={false}
+        />
       </View>
       <View style={styles.categories}>
         <FlatList
           data={categories}
           renderItem={renderCategoryItem}
           numColumns={2}
+          showsVerticalScrollIndicator={false}
         />
       </View>
     </SafeAreaView>

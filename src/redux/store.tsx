@@ -5,6 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import QuestionSlice from './Features/QuestionSlice';
 import thunk from 'redux-thunk';
 import CategoriesSlice from './Features/CategoriesSlice';
+import {useDispatch} from 'react-redux';
 
 const persistConfigQuestion = {
   key: 'question',
@@ -47,5 +48,6 @@ const persistor = persistStore(store);
 
 export type RootState = ReturnType<typeof rootReducer>;
 export type AppDispatch = typeof store.dispatch;
+export const useAppDispatch = () => useDispatch<AppDispatch>();
 
 export {store, persistor};

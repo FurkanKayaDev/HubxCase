@@ -5,6 +5,7 @@ import {
   fonts,
   fontSizes,
   colors,
+  screenScale,
 } from '../../../constants/constants';
 
 export const styles = StyleSheet.create({
@@ -82,6 +83,7 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(255, 255, 255, 0.30)',
   },
+  body: {justifyContent: 'center', alignItems: 'center'},
   btn: {
     width: screenWidth * 0.9,
     height: screenHeight * 0.06,
@@ -160,7 +162,7 @@ export const styles = StyleSheet.create({
     top: -1,
     right: -1,
     width: screenWidth * 0.2,
-    height: 25,
+    height: screenScale * 55,
     backgroundColor: colors.green,
     borderTopRightRadius: 13,
     borderBottomLeftRadius: 20,
@@ -188,5 +190,29 @@ export const styles = StyleSheet.create({
     backgroundColor: 'rgba(255, 255, 255, 0.08)',
     borderRadius: 10,
     marginBottom: 10,
+  },
+  checked: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    backgroundColor: colors.green,
+    marginRight: 10,
+  },
+  checkedIn: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: 'white',
+    position: 'absolute',
+    top: 6,
+    left: 6,
+  },
+
+  unchecked: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    backgroundColor: 'rgba(255, 255, 255, 0.08)',
+    marginRight: 10,
   },
 });

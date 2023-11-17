@@ -11,10 +11,11 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import FourthImage from '../../../assets/images/FourthImage.png';
 import * as Icons from '../../../assets/icons';
-import Icon from 'react-native-vector-icons/dist/Fontisto';
-import {useNavigation} from '@react-navigation/native';
+import Icon from 'react-native-vector-icons/Fontisto';
+import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {styles} from './FourthStep.styles';
 import {colors} from '../../../constants/constants';
+import {RootStackParamList} from '../../../types/AllType';
 interface IFeatures {
   title: string;
   content: string;
@@ -22,7 +23,7 @@ interface IFeatures {
 }
 
 const FourthStep = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   const [selectedBtn, setSelectedBtn] = useState(2);
   const data = [
     {
@@ -50,6 +51,14 @@ const FourthStep = () => {
     </View>
   );
 
+  const Checked = () => (
+    <View style={styles.checked}>
+      <View style={styles.checkedIn} />
+    </View>
+  );
+
+  const UnChecked = () => <View style={styles.unchecked} />;
+
   return (
     <ImageBackground source={FourthImage} style={styles.imageBg}>
       <Image source={FourthImage} style={styles.image} />
@@ -73,7 +82,7 @@ const FourthStep = () => {
             marginTop: 20,
           }}
         />
-        <View>
+        <View style={styles.body}>
           <View style={styles.premiumOptions}>
             <TouchableOpacity
               style={styles.btn}
@@ -87,13 +96,8 @@ const FourthStep = () => {
                     ? styles.activeGradient
                     : styles.deactiveGradient
                 }>
-                <Icon
-                  name={
-                    selectedBtn === 1 ? 'radio-btn-active' : 'radio-btn-passive'
-                  }
-                  size={20}
-                  color={colors.green}
-                />
+                {selectedBtn === 1 ? <Checked /> : <UnChecked />}
+
                 <View style={styles.btnContainer}>
                   <Text style={styles.optionsBtnTitle}>1 Month</Text>
                   <Text style={styles.optionsBtnContent}>
@@ -114,13 +118,7 @@ const FourthStep = () => {
                     ? styles.activeGradient
                     : styles.deactiveGradient
                 }>
-                <Icon
-                  name={
-                    selectedBtn === 2 ? 'radio-btn-active' : 'radio-btn-passive'
-                  }
-                  size={20}
-                  color={colors.green}
-                />
+                {selectedBtn === 2 ? <Checked /> : <UnChecked />}
                 <View style={styles.badge}>
                   <Text style={styles.badgeText}>Save 50%</Text>
                 </View>

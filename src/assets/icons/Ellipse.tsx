@@ -6,10 +6,10 @@ import Svg, {
   Defs,
   LinearGradient,
   Stop,
+  SvgProps,
 } from 'react-native-svg';
-/* SVGR has dropped some elements not supported by react-native-svg: filter */
 
-function SvgComponent(props) {
+function SvgComponent(props: any) {
   return (
     <Svg
       width={74}

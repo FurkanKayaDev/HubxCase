@@ -7,11 +7,18 @@ import {
   fontSizes,
   colors,
 } from '../../../constants/constants';
-
+const isTablet = Platform.isPad;
 export const styles = StyleSheet.create({
   imageBg: {
-    width: '100%',
-    height: '100%',
+    width: screenWidth * 1,
+    height: screenHeight * 1.2,
+    resizeMode: 'cover',
+    marginTop:
+      Platform.OS !== 'ios'
+        ? -screenHeight * 0.04
+        : isTablet
+        ? -screenHeight * 0.03
+        : -screenHeight * 0.04,
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
@@ -29,7 +36,7 @@ export const styles = StyleSheet.create({
   image: {
     width: screenWidth,
     height: screenScale * 1100,
-    resizeMode: 'contain',
+    resizeMode: 'stretch',
     marginTop:
       Platform.OS === 'ios' ? screenHeight * 0.05 : screenHeight * 0.02,
   },
@@ -71,8 +78,11 @@ export const styles = StyleSheet.create({
 
   headerContainer: {
     width: screenWidth * 0.8,
-    marginTop:
-      Platform.OS === 'ios' ? screenHeight * 0.02 : screenHeight * 0.04,
+    marginTop: isTablet
+      ? screenHeight * 0.04
+      : Platform.OS === 'ios'
+      ? screenHeight * 0.06
+      : screenHeight * 0.08,
     justifyContent: 'center',
     alignItems: 'flex-start',
   },

@@ -4,6 +4,7 @@ import {
   screenHeight,
   fonts,
   fontSizes,
+  screenScale,
 } from '../../constants/constants';
 
 export const styles = StyleSheet.create({
@@ -22,8 +23,9 @@ export const styles = StyleSheet.create({
   },
   headerContainer: {
     width: screenWidth * 0.9,
+    height: screenHeight * 0.15,
     marginTop: screenHeight * 0.03,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'flex-start',
   },
   headerTitle: {
@@ -40,13 +42,12 @@ export const styles = StyleSheet.create({
   },
   inputContainer: {
     width: screenWidth * 0.9,
-    height: 40,
+    height: screenScale * 90,
     backgroundColor: '#fff',
     borderRadius: 10,
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    marginTop: 20,
     paddingLeft: 10,
   },
   upgradeContainer: {
@@ -56,13 +57,14 @@ export const styles = StyleSheet.create({
   },
   input: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'transparent',
     borderRadius: 10,
     fontFamily: fonts.Rubik,
     fontWeight: '400',
-    fontSize: fontSizes.h11,
-    color: '#AFAFAF',
+    fontSize: fontSizes.h12,
+    color: 'black',
     paddingLeft: 15,
+    opacity: 0.5,
   },
   upgradeBtn: {
     flexDirection: 'row',

@@ -1,30 +1,34 @@
-import {
-  Text,
-  View,
-  ImageBackground,
-  TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
+import {Text, View, Image, TouchableOpacity, StyleSheet} from 'react-native';
 import React from 'react';
 import {
   screenWidth,
   screenHeight,
   fonts,
   fontSizes,
+  screenScale,
 } from '../constants/constants';
 
-const CategoryCard = ({item}) => {
+interface CategoryCardProps {
+  item: {
+    id: number;
+    title: string;
+    image: {
+      url: string;
+    };
+  };
+}
+
+const CategoryCard = ({item}: CategoryCardProps) => {
   return (
     <TouchableOpacity style={styles.card}>
-      <ImageBackground
+      <Image
         source={{uri: item.image.url}}
         resizeMode="contain"
         style={styles.cardImage}
-        imageStyle={{borderRadius: 10}}>
-        <View style={styles.cardTextContainer}>
-          <Text style={styles.cardTitle}>{item.title}</Text>
-        </View>
-      </ImageBackground>
+      />
+      <View style={styles.cardTextContainer}>
+        <Text style={styles.cardTitle}>{item.title}</Text>
+      </View>
     </TouchableOpacity>
   );
 };
@@ -33,7 +37,7 @@ export default CategoryCard;
 
 const styles = StyleSheet.create({
   card: {
-    width: screenWidth * 0.4,
+    width: screenWidth * 0.438,
     height: screenHeight * 0.2,
     marginVertical: 10,
     borderRadius: 10,
@@ -48,12 +52,12 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
   },
   cardImage: {
-    width: screenWidth * 0.4,
-    height: screenHeight * 0.2,
+    position: 'absolute',
+    right: 0,
+    bottom: 0,
+    width: screenScale * 360,
+    height: screenScale * 360,
     borderRadius: 10,
-    justifyContent: 'flex-end',
-    alignItems: 'flex-start',
-    padding: 10,
   },
   cardTextContainer: {
     position: 'absolute',

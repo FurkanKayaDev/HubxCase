@@ -10,12 +10,14 @@ import React from 'react';
 import SecondImage from '../../../assets/images/SecondImage.png';
 import SecondBackground from '../../../assets/images/SecondBackground.png';
 import Rectangle from '../../../assets/images/Rectangle.png';
-import {useNavigation} from '@react-navigation/native';
+import {NavigationProp, useNavigation} from '@react-navigation/native';
 
 import * as Icons from '../../../assets/icons';
 import {styles} from './SecondStep.styles';
+import {RootStackParamList} from '../../../types/AllType';
+
 const SecondStep = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (
     <ImageBackground source={SecondBackground} style={styles.imageBg}>
       <SafeAreaView style={styles.container}>

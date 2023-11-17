@@ -47,12 +47,11 @@ const initialState: CategoriesState = {
 
 const url = 'https://dummy-api-jtg6bessta-ey.a.run.app/getQuestions';
 
-export const fetchQuestions = createAsyncThunk(
+export const fetchQuestions: any = createAsyncThunk(
   'questions/fetchQuestions',
   async () => {
     const response = await fetch(url);
     const data = await response.json();
-    console.log('aaaaaaaa', data);
     return data;
   },
 );
