@@ -11,6 +11,7 @@ interface GradientTextProps {
 const GradientText: React.FC<GradientTextProps> = ({text, colors, style}) => {
   return (
     <MaskedView
+      style={{marginLeft: 5}}
       maskElement={
         <Text style={[style, {backgroundColor: 'transparent'}]}>{text}</Text>
       }>

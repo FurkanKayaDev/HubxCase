@@ -6,6 +6,8 @@ import {
   TextInput,
   TouchableOpacity,
   FlatList,
+  SafeAreaView,
+  Platform,
 } from 'react-native';
 import React, {useEffect} from 'react';
 import HomeBackground from '../../assets/images/HomeBackground.png';
@@ -21,6 +23,8 @@ import {fetchCategories} from '../../redux/Features/CategoriesSlice';
 import {AppDispatch} from '../../redux/store';
 import QuestionCard from '../../components/QuestionCard';
 import CategoryCard from '../../components/CategoryCard';
+import {styles} from './Home.styles';
+
 const Home = () => {
   const dispatch: AppDispatch = useDispatch();
 
@@ -38,7 +42,7 @@ const Home = () => {
 
   const renderCategoryItem = ({item}: any) => <CategoryCard {...{item}} />;
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <ImageBackground source={HomeBackground} style={styles.imageBg}>
         <View style={styles.headerContainer}>
           <Text style={styles.headerTitle}>Hi, plant lover!</Text>
@@ -50,12 +54,9 @@ const Home = () => {
         </View>
       </ImageBackground>
       <TouchableOpacity style={styles.upgradeBtn}>
-        <View
-          style={{
-            flexDirection: 'row',
-          }}>
+        <View style={styles.upgradeContainer}>
           <Icons.Mail width={50} height={50} />
-          <View style={{marginLeft: 5}}>
+          <View>
             <GradientText
               text="FREE Premium Available"
               colors={['#E5C990', '#E4B046']}
@@ -81,106 +82,8 @@ const Home = () => {
           numColumns={2}
         />
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
 export default Home;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fbfafa',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    opacity: 0.96,
-  },
-  imageBg: {
-    width: screenWidth,
-    height: screenHeight * 0.2,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-  },
-  headerContainer: {
-    width: screenWidth * 0.9,
-    marginTop: screenHeight * 0.03,
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-  },
-  headerTitle: {
-    fontFamily: fonts.Rubik,
-    fontSize: fontSizes.h9,
-    fontWeight: '400',
-    color: '#13231B',
-  },
-  headerContent: {
-    fontFamily: fonts.Rubik,
-    fontWeight: '600',
-    fontSize: fontSizes.h4,
-    color: '#13231B',
-  },
-  inputContainer: {
-    width: screenWidth * 0.9,
-    height: 40,
-    backgroundColor: '#fff',
-    borderRadius: 10,
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    marginTop: 20,
-    paddingLeft: 10,
-  },
-  input: {
-    flex: 1,
-    backgroundColor: '#fff',
-    borderRadius: 10,
-    fontFamily: fonts.Rubik,
-    fontWeight: '400',
-    fontSize: fontSizes.h11,
-    color: '#AFAFAF',
-    paddingLeft: 15,
-  },
-  upgradeBtn: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: screenWidth * 0.9,
-    backgroundColor: '#24201A',
-    borderRadius: 10,
-    marginTop: 20,
-    padding: 10,
-  },
-  upgradeBtnTitle: {
-    fontFamily: fonts.SfProBold,
-    fontWeight: '700',
-    fontSize: fontSizes.h10,
-    color: '#fff',
-  },
-  upgradeBtnContent: {
-    fontFamily: fonts.SfProMedium,
-    fontWeight: '600',
-    fontSize: fontSizes.h11,
-    color: '#fff',
-  },
-  questions: {
-    width: screenWidth * 0.9,
-    height: screenHeight * 0.25,
-    backgroundColor: '#fbfafa',
-    borderRadius: 10,
-    marginTop: 20,
-  },
-  categories: {
-    width: screenWidth * 0.9,
-    height: screenHeight * 0.5,
-    borderRadius: 10,
-    marginTop: 10,
-  },
-  questionsTitle: {
-    fontFamily: fonts.Rubik,
-    fontWeight: '700',
-    fontSize: fontSizes.h11,
-    color: '#13231B',
-    marginLeft: 10,
-    marginTop: 10,
-  },
-});

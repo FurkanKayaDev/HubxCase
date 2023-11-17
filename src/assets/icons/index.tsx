@@ -7,3 +7,8 @@ export {default as ActiveTick} from './ActiveTick';
 export {default as InactiveTick} from './InactiveTick';
 export {default as Mail} from './Mail';
 export {default as BoldArrow} from './BoldArrow';
+export {default as Ellipse} from './Ellipse';
+export {default as HealtCare} from './HealtCare';
+export {default as Home} from './Home';
+export {default as Garden} from './Garden';
+export {default as Profile} from './Profile';
