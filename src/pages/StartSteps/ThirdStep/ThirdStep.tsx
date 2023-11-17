@@ -8,13 +8,11 @@ import {
 } from 'react-native';
 import React from 'react';
 import ThirdImage from '../../../assets/images/ThirdImage.png';
-import SecondBackground from '../../../assets/images/SecondBackground.png';
 import Rectangle from '../../../assets/images/Rectangle.png';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {styles} from './ThirdStep.styles';
 import * as Icons from '../../../assets/icons';
 import {RootStackParamList} from '../../../types/AllType';
-import LinearGradient from 'react-native-linear-gradient';
 const ThirdStep = () => {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   return (

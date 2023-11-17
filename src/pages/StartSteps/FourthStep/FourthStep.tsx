@@ -8,14 +8,14 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
-
 import FourthImage from '../../../assets/images/FourthImage.png';
 import * as Icons from '../../../assets/icons';
 import Icon from 'react-native-vector-icons/Fontisto';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {styles} from './FourthStep.styles';
-import {colors} from '../../../constants/constants';
 import {RootStackParamList} from '../../../types/AllType';
+import {useDispatch} from 'react-redux';
+import {setFirstLogin} from '../../../redux/Features/AppSlice';
 interface IFeatures {
   title: string;
   content: string;
@@ -25,6 +25,7 @@ interface IFeatures {
 const FourthStep = () => {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   const [selectedBtn, setSelectedBtn] = useState(2);
+  const dispatch = useDispatch();
   const data = [
     {
       title: 'Unlimited',
@@ -64,8 +65,11 @@ const FourthStep = () => {
       <Image source={FourthImage} style={styles.image} />
       <TouchableOpacity
         style={styles.closeBtn}
-        onPress={() => navigation.navigate('MainStack')}>
-        <Icon name="close-a" size={16} color="white" />
+        onPress={() => {
+          navigation.navigate('MainStack');
+          dispatch(setFirstLogin(false));
+        }}>
+        <Icon name="close-a" size={12} color="white" />
       </TouchableOpacity>
       <View style={styles.headerContainer}>
         <Text style={styles.boldTitle}>

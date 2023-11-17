@@ -64,7 +64,7 @@ export const styles = StyleSheet.create({
   activeGradient: {
     flexDirection: 'row',
     width: screenWidth * 0.9,
-    height: screenHeight * 0.06,
+    height: screenHeight * 0.07,
     justifyContent: 'flex-start',
     alignItems: 'center',
     paddingHorizontal: 10,
@@ -75,7 +75,7 @@ export const styles = StyleSheet.create({
   deactiveGradient: {
     flexDirection: 'row',
     width: screenWidth * 0.9,
-    height: screenHeight * 0.06,
+    height: screenHeight * 0.07,
     justifyContent: 'flex-start',
     alignItems: 'center',
     paddingHorizontal: 10,
@@ -88,7 +88,7 @@ export const styles = StyleSheet.create({
     width: screenWidth * 0.9,
     height: screenHeight * 0.06,
     borderRadius: 14,
-    marginTop: 20,
+    marginTop: screenScale * 50,
     justifyContent: 'center',
     alignItems: 'flex-start',
   },

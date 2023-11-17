@@ -9,11 +9,12 @@ import {RootStackParamList} from '../types/AllType';
 
 const Router = () => {
   const Stack = createNativeStackNavigator<RootStackParamList>();
-
+  const firstLogin = useSelector((state: any) => state.app.firstLogin);
+  console.log('firstLogin', firstLogin);
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="StepStack" component={StepStack} />
+        {firstLogin && <Stack.Screen name="StepStack" component={StepStack} />}
         <Stack.Screen name="MainStack" component={MainStack} />
       </Stack.Navigator>
     </NavigationContainer>

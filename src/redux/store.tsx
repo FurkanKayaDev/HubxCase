@@ -5,6 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import QuestionSlice from './Features/QuestionSlice';
 import thunk from 'redux-thunk';
 import CategoriesSlice from './Features/CategoriesSlice';
+import AppSlice from './Features/AppSlice';
 import {useDispatch} from 'react-redux';
 
 const persistConfigQuestion = {
@@ -27,13 +28,13 @@ const categoriesReducer = persistReducer(
 const rootReducer = combineReducers({
   question: questionReducer,
   categories: categoriesReducer,
+  app: AppSlice,
 });
 
-// sadece question ve authSlice dosyalarını kaydet
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: [],
+  whitelist: ['app'],
   logger: false,
 };
 

@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   FlatList,
   SafeAreaView,
+  ActivityIndicator,
 } from 'react-native';
 import React, {useEffect} from 'react';
 import HomeBackground from '../../assets/images/HomeBackground.png';
@@ -26,7 +27,6 @@ const Home = () => {
   const {questions, loading} = useSelector(
     (state: RootState) => state.question,
   );
-
   const {categories} = useSelector((state: RootState) => state.categories);
   useEffect(() => {
     dispatch(fetchCategories());
@@ -72,12 +72,18 @@ const Home = () => {
       </TouchableOpacity>
       <View style={styles.questions}>
         <Text style={styles.questionsTitle}>Get Started</Text>
-        <FlatList
-          data={questions}
-          horizontal
-          renderItem={renderQuestionItem}
-          showsHorizontalScrollIndicator={false}
-        />
+        {loading ? (
+          <View style={styles.center}>
+            <ActivityIndicator size="large" color="black" />
+          </View>
+        ) : (
+          <FlatList
+            data={questions}
+            horizontal
+            renderItem={renderQuestionItem}
+            showsHorizontalScrollIndicator={false}
+          />
+        )}
       </View>
       <View style={styles.categories}>
         <FlatList

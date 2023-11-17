@@ -109,4 +109,5 @@ export const styles = StyleSheet.create({
     marginLeft: 10,
     marginTop: 10,
   },
+  center: {flex: 1, justifyContent: 'center', alignItems: 'center'},
 });

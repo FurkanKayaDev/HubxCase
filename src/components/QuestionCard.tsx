@@ -2,7 +2,6 @@ import {Text, View, ImageBackground, StyleSheet} from 'react-native';
 import React from 'react';
 import {
   screenWidth,
-  screenHeight,
   fonts,
   fontSizes,
   screenScale,
