@@ -66,7 +66,10 @@ const FourthStep = () => {
       <TouchableOpacity
         style={styles.closeBtn}
         onPress={() => {
-          navigation.navigate('MainStack');
+          navigation.reset({
+            index: 0,
+            routes: [{name: 'MainStack'}],
+          });
           dispatch(setFirstLogin(false));
         }}>
         <Icon name="close-a" size={12} color="white" />
